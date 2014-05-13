@@ -18,8 +18,8 @@ public:
 
 private:
 	// External constructors
-	template <typename T>
-	friend device_array_t<T> DeviceArray(const tuple &size);
+	template <typename U>
+	friend device_array_t<U> DeviceArray(const tuple &size);
 
 protected:
 	device_array_t(const tuple &size, 
